@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/menu-button-style.uss?fileID=7433441132597879392&amp;guid=a959741a61406024682c2e0b19519abd&amp;type=3#menu-button-style" />
+    <ui:VisualElement style="height: 51px; align-items: flex-start; justify-content: flex-start; flex-direction: row;">
+        <ui:Button display-tooltip-when-elided="true" name="menu_button" class="menu-button-style" style="height: 39px; width: 44px;" />
+        <ui:Button display-tooltip-when-elided="true" name="home_button" class="menu-button-style" style="height: 39px; width: 44px; background-image: url(&apos;project://database/Assets/60817.png?fileID=2800000&amp;guid=c08347969dc18f84295963f00b8322d8&amp;type=3#60817&apos;);" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-direction: column; position: absolute; height: 394px; width: 319px; top: 60px; left: 0; align-items: center;">
+        <ui:VisualElement name="Toggle" style="flex-direction: row; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+            <ui:Label text="Dark Mode" display-tooltip-when-elided="true" style="border-right-width: 27px; font-size: 28px;" />
+            <ui:Toggle name="darkmode_toggle" style="font-size: 34px; width: 26px; justify-content: center; flex-direction: row; align-items: stretch; scale: 1.5 1.5; translate: 0 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="menu" style="height: 511px; background-color: rgba(0, 0, 0, 0.48); border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; justify-content: center; opacity: 1; visibility: visible;">
+        <ui:Button text="Play Game" display-tooltip-when-elided="true" name="game_button" class="menu-option-button-style" />
+        <ui:Button text="Leaderboard" display-tooltip-when-elided="true" name="leaderboard_button" class="menu-option-button-style" />
+        <ui:Button text="Advanced Stats" display-tooltip-when-elided="true" name="adv_button" class="menu-option-button-style" style="top: auto;" />
+    </ui:VisualElement>
+</ui:UXML>
